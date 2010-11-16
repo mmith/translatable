@@ -1,7 +1,7 @@
 Translatable
 ============
 
-Simple plugin to manage translatable attributes for a model.
+Simple RoR plugin to manage translatable attributes for a model.
 
 This plugin requires Globalize3 gem
 

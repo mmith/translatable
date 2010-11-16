@@ -1,0 +1,22 @@
+Translatable
+============
+
+Simple plugin to manage translatable attributes for a model.
+
+This plugin requires Globalize3 gem
+
+Example
+=======
+
+Simply add acts_as_translatable in your model. When you save your instance, the plugin will create all translations for all available locales for translates attributes.
+
+It manages the nested attributes for translations when you edit your instance.
+
+Todo
+=========
+
+ - tests
+
+Copyright (c) 2010 [mickael mithouard], released under the MIT license
+
+

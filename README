@@ -12,11 +12,21 @@ Simply add acts_as_translatable in your model. When you save your instance, the 
 
 It manages the nested attributes for translations when you edit your instance.
 
+Initializer
+============
+
+Default available_locales are :en, :fr and :de. You can override theeses with an initiliazers 
+
+Example :
+in /config/initializers/translatable.rb
+
+Translatable.available_locales = [:fr,:de]
+
 Todo
 =========
 
  - tests
 
-Copyright (c) 2010 [mickael mithouard], released under the MIT license
+Copyright (c) 2011 [mickael mithouard], released under the MIT license
 
 

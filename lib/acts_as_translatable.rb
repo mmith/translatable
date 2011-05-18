@@ -1,5 +1,8 @@
 module Translatable
   
+  mattr_accessor :available_locales
+  self.available_locales = [:en, :fr, :de]
+  
   def self.included(base)
     base.send :extend, ClassMethods
   end
@@ -15,7 +18,7 @@ module Translatable
   
   module InstanceMethods
     def init_translations
-      I18n.available_locales.reject{|key| key == :root }.each do |locale|
+      Translatable.available_locales.reject{|key| key == :root }.each do |locale|
         translation = self.translations.find_by_locale locale.to_s
         if translation.nil?          
           translations.build :locale => locale
